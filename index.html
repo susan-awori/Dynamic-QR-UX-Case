@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScanPay: Dynamic QR Scanner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ScanPay</h1>
+      <p>Scan to eliminate payment friction.</p>
+    </header>
+
+    <main id="app-container">
+      <section id="scanner-view">
+        <video id="scanner" autoplay></video>
+        <div id="scan-overlay"></div>
+      </section>
+
+      <section id="result-view" style="display: none">
+        <h2>Transaction Details</h2>
+        <p>Merchant: <span id="merchant-name"></span></p>
+        <p>Amount: KES <span id="amount-due"></span></p>
+        <button id="confirm-payment">Confirm Payment</button>
+        <button id="cancel-scan">Cancel</button>
+      </section>
+
+      <p id="status-message">Awaiting scan...</p>
+    </main>
+
+    <footer>
+      <p>&copy; ScanPay Project</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
