@@ -24,16 +24,23 @@ header {
 #scanner-view {
   position: relative;
   width: 90%;
-  max-width: 400px;
-  margin: 20px auto;
+  max-width: 450px;
+  margin: 30px auto;
   overflow: hidden;
-  border: 3px solid var(--primary-color);
 }
 
-#scanner {
+#reader {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 450px;
+  border: 5px solid #007bff;
+  box-sizing: border-box;
+}
+
+#result-view {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Button Styling */
