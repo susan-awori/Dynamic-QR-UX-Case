@@ -18,7 +18,14 @@
         <div id="reader"></div>
         <div id="scan-overlay"></div>
       </section>
-      <section id="result-view" style="display: none"></section>
+      <section id="result-view" style="display: none">
+        <h2>Transaction Confirmation</h2>
+        <p>Merchant: <span id="merchant-name">N/A</span></p>
+        <p>Amount: KES <span id="amount-due">0.00</span></p>
+
+        <button id="confirm-payment">Confirm KES Payment</button>
+        <button id="cancel-scan">Cancel Transaction</button>
+      </section>
 
       <p id="status-message">Awaiting scan...</p>
     </main>

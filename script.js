@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const confirmButton = document.getElementById("confirm-payment");
   const cancelButton = document.getElementById("cancel-scan");
 
+  // --- HTML5-QRCODE Global Instance ---
+  // 'reader' is the ID of the div element in index.html
   const qrCodeScanner = new Html5Qrcode("reader");
 
   const config = {

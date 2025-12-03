@@ -3,6 +3,8 @@
   --secondary-color: #28a745;
   --background-color: #f8f9fa;
   --font-color: #333;
+  --white: #ffffff;
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -26,21 +28,33 @@ header {
   width: 90%;
   max-width: 450px;
   margin: 30px auto;
-  overflow: hidden;
 }
 
 #reader {
   width: 100%;
   height: 450px;
-  border: 5px solid #007bff;
+  border: 5px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #result-view {
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 25px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 450px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+  border-top: 5px solid var(--secondary-color);
+}
+#reader video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Button Styling */
@@ -56,4 +70,12 @@ button {
 #confirm-payment {
   background-color: var(--secondary-color);
   color: white;
+}
+
+footer {
+  margin-top: auto; /* Pushes footer to the bottom */
+  padding: 1rem;
+  background: var(--background-color);
+  color: #6c757d; /* Gray color */
+  border-top: 1px solid #dee2e6;
 }
